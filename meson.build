@@ -103,3 +103,5 @@ libraw = library(
   install : true
 )
 
+libraw_dep = declare_dependency(link_with : libraw,
+  include_directories : inc)
